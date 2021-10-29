@@ -5,19 +5,21 @@ import svgImg from "../images/9foG-.svg";
 
 const App = () => {
   return (
-    <>
-      <section className="hero">
-        <main>
-          <section>
-            <h1>Hello, React</h1>
-          </section>
-        </main>
-        <img src={panel} alt="panel" width="250" />
-        <img src={svgImg} alt="svgImg" />
-        {/* <h1>Test</h1> */}
-        <Recipes />
-      </section>
-    </>
+    <div className="wrapper">
+      <div className="container">
+        <section className="hero">
+          <main>
+            <section>
+              <h1>Hello, React</h1>
+            </section>
+          </main>
+          <img src={panel} alt="panel" width="250" />
+          <img src={svgImg} alt="svgImg" />
+          {/* <h1>Test</h1> */}
+          <Recipes />
+        </section>
+      </div>
+    </div>
   );
 };
 
