@@ -11,8 +11,10 @@ const StartReact = () => {
             <h1>Hello, React</h1>
           </section>
         </main>
-        <img src={react} alt="panel" width="250" />
-        <img src={svgImg} alt="svgImg" />
+        <div className="images">
+          <img src={react} alt="panel" width="250" />
+          <img src={svgImg} alt="svgImg" />
+        </div>
       </section>
     </div>
   );
