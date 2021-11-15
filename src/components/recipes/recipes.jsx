@@ -18,7 +18,8 @@ console.log(elvenGauntletsRecipe);
 const Recipes = () => {
   const [recipe, setRecipe] = useState({});
   return (
-    <div>
+    <div className="recipes">
+      <h1>Test component Recipe</h1>
       <h3>Current Recipe</h3>
       <button onClick={() => setRecipe(elvenShieldRecipe)}>
         elven Shield Recipe
