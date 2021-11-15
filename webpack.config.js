@@ -41,7 +41,7 @@ if (process.env.NODE_ENV === "production") {
   target = "browserslist";
 }
 
-const filename = (ext) => (isDev ? `[name].${ext}` : `[name].[hash].${ext}`);
+const filename = (ext) => (isDev ? `[name].${ext}` : `[name].${ext}`);
 
 const cssLoaders = (extra) => {
   const loaders = [
@@ -146,7 +146,7 @@ module.exports = (env) => {
     output: {
       filename: filename("js"),
       path: path.resolve(__dirname, "prod"),
-      assetModuleFilename: "images/[hash][ext][query]",
+      assetModuleFilename: "images/[name][ext][query]",
       clean: true,
     },
 
@@ -171,7 +171,7 @@ module.exports = (env) => {
           test: /\.(eot|otf|ttf|woff|woff2)$/,
           type: "asset/resource",
           generator: {
-            filename: "fonts/[hash][ext][query]",
+            filename: "fonts/[name][ext][query]",
           },
         },
         {
