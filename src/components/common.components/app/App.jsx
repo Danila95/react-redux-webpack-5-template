@@ -1,4 +1,4 @@
-import "../../../styles/index.scss";
+// import "../../../styles/index.scss";
 import Recipes from "../recipes/recipes";
 import Header from "../header/header";
 import panel from "../../../images/photos-1.jpg";
