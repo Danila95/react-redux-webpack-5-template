@@ -31,7 +31,7 @@ enter command `npm install` or `yarn install` (if you use yarn) to install depen
 - `npm run dash-start` - start webpack serve with awesome plagin-interface webpack-dashboard.
 - `npm run prop` - show some details of the current computer.
 - `npm run stats` - run plagin webpack-bundle-analyzer.
-- `npm run stats` - run json-server.
+- `npm run run-db` - run json-server.
 
   npm-check-updates - это утилита, которая автоматически настраивает package.json, которая подтягивает последнии версии всех зависимостей.
 
