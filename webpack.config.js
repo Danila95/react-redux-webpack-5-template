@@ -149,6 +149,20 @@ module.exports = (env) => {
       assetModuleFilename: "images/[name][ext][query]",
       clean: true,
     },
+    // resolve: {
+    //   extensions: [".js", ".json", ".png", ".xml", ".csv"], // теперь в путях не надо писать расш. вызываемых файлов
+    //   alias: {
+    //     "@models": path.resolve(
+    //       __dirname,
+    //       "src/components/common.components/common/models"
+    //     ),
+    //     "@common": path.resolve(
+    //       __dirname,
+    //       "src/components/common.components/common/"
+    //     ),
+    //     "@": path.resolve(__dirname, "src"),
+    //   },
+    // },
 
     module: {
       rules: [
@@ -183,6 +197,22 @@ module.exports = (env) => {
           exclude: /node_modules/,
           use: {
             loader: "babel-loader",
+          },
+        },
+        {
+          test: /\.xml$/,
+          use: ["xml-loader"],
+        },
+        {
+          test: /\.csv$/,
+          use: ["csv-loader"],
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: "babel-loader",
+          options: {
+            plugins: ["@babel/plugin-proposal-class-properties"],
           },
         },
       ],
