@@ -81,6 +81,7 @@ const plugins = () => {
       filename: filename("css"),
       // path: path.resolve(__dirname, 'prod')
     }),
+    new CleanWebpackPlugin(),
     new DashboardPlugin(), // подключаем красивый интерфейс к webpack
     new CopyWebpackPlugin({
       patterns: [
