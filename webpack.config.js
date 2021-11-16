@@ -150,20 +150,6 @@ module.exports = (env) => {
       assetModuleFilename: "images/[name][ext][query]",
       clean: true,
     },
-    // resolve: {
-    //   extensions: [".js", ".json", ".png", ".xml", ".csv"], // теперь в путях не надо писать расш. вызываемых файлов
-    //   alias: {
-    //     "@models": path.resolve(
-    //       __dirname,
-    //       "src/components/common.components/common/models"
-    //     ),
-    //     "@common": path.resolve(
-    //       __dirname,
-    //       "src/components/common.components/common/"
-    //     ),
-    //     "@": path.resolve(__dirname, "src"),
-    //   },
-    // },
 
     module: {
       rules: [
@@ -171,13 +157,6 @@ module.exports = (env) => {
           test: /\.css$/,
           use: cssLoaders(),
         },
-        // {
-        //   test: /\.pug$/,
-        //   loader: "pug-loader",
-        //   options: {
-        //     pretty: isDev,
-        //   },
-        // },
         {
           test: /\.(png|jpe?g|svg|gif|ico)$/i,
           type: "asset",
