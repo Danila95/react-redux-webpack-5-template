@@ -18,7 +18,7 @@ const FirstStartWebpack = () => {
     <div className="container">
       <h1>First start Webpack</h1>
       <hr />
-      <div className="logo">
+      <div className="logoo">
         <img src={WebpackLogo} alt="" />
         <h1>png loaded successfully</h1>
         <hr />
