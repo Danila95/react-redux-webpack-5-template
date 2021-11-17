@@ -40,6 +40,9 @@ const StartBootstrap = () => {
         </label>
         <input type="range" className="form-range" id="customRange1" />
       </div>
+      <div className="container">
+        <i class="fas fa-user-graduate"></i>
+      </div>
     </div>
   );
 };
